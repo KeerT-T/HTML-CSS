@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanhos de imagens</title>
+    <link rel="shortcut icon" href="https://i.pinimg.com/originals/51/d6/de/51d6def892f689d44a7ab1db6b090715.jpg" type="image/x-icon">
+</head>
+<body>
+    <h1>imagens dinamicas</h1>
+    <p>abra o site em diferentes dispositivos</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/JPEG/p.jpg" type="image/jpg">
+        <source media="(max-width:1050px)" srcset="imagens/JPEG/m.jpg" type="image/jpg">
+        <img src="imagens/JPEG/g.jpg" alt="tamanho flexivel">
+    </picture>
+
+    <h1>reproduzindo audio</h1>
+    <p>olha que música legal</p>
+    <audio src="midia/cool-christmas.mp3" controls></audio>
+        
+        <audio>
+            <source srcset="midia/cool-christmas.mp3" type="audio/mpeg">
+        </audio>
+
+        <p>testando download pra áudio no chrome <a href="midia/cool-christmas.mp3" download="midia/cool-christmas.mp3">Clique Aqui</a></p>
+
+        <p>outra forma de inserir audio (meio hierarquicamente)</p>
+        <audio controls>
+            <source src="midia/cool-chistmas.mp3" type="audio/mpeg">
+            <source src="midia/Soneguei.mp3" type="audio/mpeg">
+            
+        </audio>
+</body>
+</html>
