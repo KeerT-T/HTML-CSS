@@ -5,28 +5,27 @@ header{
     margin: -8px -8px 0px -8px;
     padding: 10px;
     height: 205px;
-    font-family: 'Passion One', sans-serif;
-}
-.cordel{
+    font: normal 3em 'Passion One' sans-serif;
     color: white;
     text-align: center;
+}
+.link_milton{
+    color: white;
+    text-decoration: none;
+    }
+:hover.link_milton{
+    text-decoration: underline;
+}
+.cordel{
     font-size: 5.5em;
     margin-bottom: -5px;
 }
 :hover.cordel{
     text-decoration: underline;
 }
-.link_milton{
-    color: white;
-    text-decoration: none;
-}
 
-.milton{
-    color: white;
-    text-align: center;
-    font-size: 25px;
-    margin-top: -3px;
-}
-:hover.milton{
-    text-decoration: underline;
-}
+
+.txt1{
+    width: 300px;
+    padding: 10px;
+    }
