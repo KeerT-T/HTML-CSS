@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cordel {
+    font-size: 24px; /* Tamanho da fonte desejado */
+}
+
+.cordel::first-letter {
+    font-size: 1.5em; /* Aumenta o tamanho do 'C' */
+    text-transform: uppercase; /* Garante que o 'C' esteja em maiúscula */
+}
+
+.cordel::nth-letter(8) { /* Assume que 'M' é a 8ª letra */
+    font-size: 1.5em; /* Aumenta o tamanho do 'M' */
+    text-transform: uppercase; /* Garante que o 'M' esteja em maiúscula */
+}
+
+    </style>
+</head>
+<body>
+    <div class="cordel">CORDEL MODERNO</div>
+</body>
+</html>
