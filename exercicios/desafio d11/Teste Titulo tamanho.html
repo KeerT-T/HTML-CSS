@@ -3,25 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Font Weight Hover Animation</title>
     <style>
-        .cordel {
-    font-size: 24px; /* Tamanho da fonte desejado */
-}
+        .animated-text {
+            font-size: 2rem;
+            font-weight: 400;
+            transition: font-weight 0.5s ease;
+        }
 
-.cordel::first-letter {
-    font-size: 1.5em; /* Aumenta o tamanho do 'C' */
-    text-transform: uppercase; /* Garante que o 'C' esteja em maiúscula */
-}
-
-.cordel::nth-letter(8) { /* Assume que 'M' é a 8ª letra */
-    font-size: 1.5em; /* Aumenta o tamanho do 'M' */
-    text-transform: uppercase; /* Garante que o 'M' esteja em maiúscula */
-}
-
+        .animated-text:hover {
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
-    <div class="cordel">CORDEL MODERNO</div>
+    <p class="animated-text">Passe o mouse sobre mim!</p>
 </body>
 </html>
