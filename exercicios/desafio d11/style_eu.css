@@ -11,7 +11,7 @@
     font-family: var(--fonte_sans-serif);
     margin: 0px;
     padding: 0px;
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
 }
 html, body{
     min-height: 100vh;
@@ -41,7 +41,7 @@ header > h1{
     
 }
 h1{
-    font: bold 3em 'Passion One';
+    font: bold 8vw 'Passion One';
     margin: 0px;
     font-variant: small-caps;
 }
@@ -58,7 +58,7 @@ h1:hover{
     color: antiquewhite;
 }
 section p{
-    font: 700 italic 1.5em var(--fonte_da_poesia);
+    font: 700 italic 3vw var(--fonte_da_poesia);
     padding-top: 10vh;
     padding-left: 30px;
     padding-bottom: 10vh;
@@ -80,7 +80,8 @@ section.imagem{
     color: white;
 }
 section.imagem p{
-    width: 300px;
+    padding: 3px;
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.298);
     
 }
@@ -89,7 +90,4 @@ footer{
     color:white;
     text-align: center;
     padding: 1px;
-}
-.normal > {
-    
 }
