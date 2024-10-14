@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Font Weight Hover Animation</title>
+    <title>Document</title>
     <style>
-        .animated-text {
-            font-size: 2rem;
-            font-weight: 400;
-            transition: font-weight 0.5s ease;
+        @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+        body{
+            font-family: 'Patrick Hand', 'Comic Sans MS';
+            font-style: italic;
+            font-weight: bold;
+            font-size: 5em;
+            margin: 0px;
+            padding: 0px;
         }
-
-        .animated-text:hover {
-            font-weight: 500;
+        .imagem{
+            padding-left: 100px;
+        }
+        section.imagem > p{
+            display: inline-block;
+            padding: 2px;
+            background-color: grey;
+            
         }
     </style>
 </head>
 <body>
-    <p class="animated-text">Passe o mouse sobre mim!</p>
+    <section class="imagem" id="img"><p>
+        olha que legal isss
+    </p></section>
 </body>
 </html>
