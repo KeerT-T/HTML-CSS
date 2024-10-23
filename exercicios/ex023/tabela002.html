@@ -17,7 +17,12 @@
             width: 500px;
             text-align: center;
         }
-        
+        caption{
+            font-size: 2em;
+            font-weight: bold;
+            padding: 5px;
+            background-color:pink
+        }        
         th{
             border: 1px solid black ;
             
@@ -41,10 +46,11 @@
 <body>
     <h1>Uso de tabelas GRANDES</h1>
     <table>
+        <caption>População Estadual</caption>
         <thead>
-            <th>Contagem</th>
-            <th>Estado</th>
-            <th>Hábitantes</th>
+            <th scope="col">Contagem</th>
+            <th scope="col" style="width: 150px;">Estado</th>
+            <th scope="col" style=" width: 50px">Hábitantes</th>
         </thead>
         <tbody>
             <tr>
@@ -65,7 +71,7 @@
         </tbody>
         <tfoot>
             <td>4</td>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td><strong>13.900.000</strong></td>
         </tfoot>
     </table>
