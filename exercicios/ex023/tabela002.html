@@ -8,11 +8,8 @@
         *{
             font-family: Helvetica, sans-serif;
         }
-        body{
-            background-color: rgb(255, 143, 143);
-        }
         table{
-            border: 1px solid black;
+            border: 1px solid rgb(0, 0, 0);
             border-collapse: collapse;
             width: 500px;
             text-align: center;
@@ -21,25 +18,32 @@
             font-size: 2em;
             font-weight: bold;
             padding: 5px;
-            background-color:pink
+            background-color:rgb(94, 94, 94);
+            color: white;
         }        
-        th{
-            border: 1px solid black ;
-            
-        }
-        td{
-            border: 2px solid rgb(0, 26, 255);
+        td, th{
             padding: 5px;   
+            border: 1px solid black;
         }
         thead, tfoot{
-            background-color: antiquewhite;
+            background-color: rgb(221, 221, 221);
+            
         }
         tbody{
-            background-color: black;
-            color: white;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
         }
+        tbody > tr:nth-child(2n){
+            background-color: rgb(255, 0, 0);
+        }  
+        tbody > tr:nth-child(2n-1){
+            background-color: rgb(76, 0, 255);
+        }       
         .numeracao{
             text-align: right;
+        }
+        .cont{
+            width: 40px;
         }
     </style>
 </head>
@@ -48,31 +52,56 @@
     <table>
         <caption>População Estadual</caption>
         <thead>
-            <th scope="col">Contagem</th>
+            <th scope="col" class="cont">Contagem</th>
             <th scope="col" style="width: 150px;">Estado</th>
             <th scope="col" style=" width: 50px">Hábitantes</th>
         </thead>
         <tbody>
             <tr>
-               <td>1</td>
+               <td class="cont">1</td>
                 <td>São Luís</td>
                 <td class="numeracao">5.000.000</td>
         </tr>
         <tr>    
-            <td>2</td>
+            <td class="cont">2</td>
             <td>Fortaleza</td>
             <td class="numeracao">6.900.000</td>
         </tr>
         <tr>
-            <td>3</td>
+            <td class="cont">3</td>
             <td>Belém</td>
             <td class="numeracao">2.000.000</td>
         </tr>
+        <tr>
+            <td class="cont">4</td>
+            <td>Curitiba</td>
+            <td class="numeracao">7.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">5</td>
+            <td>Rio de Janeiro</td>
+            <td class="numeracao">12.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">6</td>
+            <td>São Paulo</td>
+            <td class="numeracao">23.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">7</td>
+            <td>Rio Branco</td>
+            <td class="numeracao">1.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">8</td>
+            <td>Porto Alegre</td>
+            <td class="numeracao">3.000.000</td>
+        </tr>
         </tbody>
         <tfoot>
-            <td>4</td>
+            <td class="cont">4</td>
             <th scope="row">Total de Habitantes</th>
-            <td><strong>13.900.000</strong></td>
+            <td class="numeracao"><strong>59.900.000</strong></td>
         </tfoot>
     </table>
 
