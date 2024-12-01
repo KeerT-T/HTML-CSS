@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        *{
+            font-family: Helvetica, sans-serif;
+        }
+        table{
+            border: 1px solid rgb(0, 0, 0);
+            border-collapse: collapse;
+            width: 500px;
+            text-align: center;
+            position: relative;
+        }
+        caption{
+            font-size: 2em;
+            font-weight: bold;
+            padding: 5px;
+            background-color:rgb(94, 94, 94);
+            color: white;
+        }        
+        td, th{
+            padding: 5px;   
+            border: 1px solid black;
+        }
+        thead, tfoot{
+            background-color: rgb(221, 221, 221);
+            
+        }
+        tbody{
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+        tbody > tr:nth-child(2n){
+            background-color: rgb(175, 175, 175);
+        }  
+        tbody > tr:nth-child(2n-1){
+            background-color: rgb(255, 255, 255);
+        }       
+        .numeracao{
+            text-align: right;
+        }
+        .cont{
+            width: 40px;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas GRANDES</h1>
+    <table>
+        <caption>População Estadual</caption>
+        <thead>
+            <th scope="col" class="cont">Contagem</th>
+            <th scope="col" style="width: 150px;">Estado</th>
+            <th scope="col" style=" width: 50px">Hábitantes</th>
+        </thead>
+        <tbody>
+            <tr>
+               <td class="cont">1</td>
+                <td>São Luís</td>
+                <td class="numeracao">5.000.000</td>
+        </tr>
+        <tr>    
+            <td class="cont">2</td>
+            <td>Fortaleza</td>
+            <td class="numeracao">6.900.000</td>
+        </tr>
+        <tr>
+            <td class="cont">3</td>
+            <td>Belém</td>
+            <td class="numeracao">2.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">4</td>
+            <td>Curitiba</td>
+            <td class="numeracao">7.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">5</td>
+            <td>Rio de Janeiro</td>
+            <td class="numeracao">12.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">6</td>
+            <td>São Paulo</td>
+            <td class="numeracao">23.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">7</td>
+            <td>Rio Branco</td>
+            <td class="numeracao">1.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">8</td>
+            <td>Porto Alegre</td>
+            <td class="numeracao">3.000.000</td>
+        </tr>
+        <tr>    
+            <td class="cont">2</td>
+            <td>Fortaleza</td>
+            <td class="numeracao">6.900.000</td>
+        </tr>
+        <tr>
+            <td class="cont">3</td>
+            <td>Belém</td>
+            <td class="numeracao">2.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">4</td>
+            <td>Curitiba</td>
+            <td class="numeracao">7.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">5</td>
+            <td>Rio de Janeiro</td>
+            <td class="numeracao">12.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">6</td>
+            <td>São Paulo</td>
+            <td class="numeracao">23.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">7</td>
+            <td>Rio Branco</td>
+            <td class="numeracao">1.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">8</td>
+            <td>Porto Alegre</td>
+            <td class="numeracao">3.000.000</td>
+        </tr>
+        <tr>    
+            <td class="cont">2</td>
+            <td>Fortaleza</td>
+            <td class="numeracao">6.900.000</td>
+        </tr>
+        <tr>
+            <td class="cont">3</td>
+            <td>Belém</td>
+            <td class="numeracao">2.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">4</td>
+            <td>Curitiba</td>
+            <td class="numeracao">7.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">5</td>
+            <td>Rio de Janeiro</td>
+            <td class="numeracao">12.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">6</td>
+            <td>São Paulo</td>
+            <td class="numeracao">23.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">7</td>
+            <td>Rio Branco</td>
+            <td class="numeracao">1.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">8</td>
+            <td>Porto Alegre</td>
+            <td class="numeracao">3.000.000</td>
+        </tr>
+        <tr>    
+            <td class="cont">2</td>
+            <td>Fortaleza</td>
+            <td class="numeracao">6.900.000</td>
+        </tr>
+        <tr>
+            <td class="cont">3</td>
+            <td>Belém</td>
+            <td class="numeracao">2.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">4</td>
+            <td>Curitiba</td>
+            <td class="numeracao">7.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">5</td>
+            <td>Rio de Janeiro</td>
+            <td class="numeracao">12.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">6</td>
+            <td>São Paulo</td>
+            <td class="numeracao">23.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">7</td>
+            <td>Rio Branco</td>
+            <td class="numeracao">1.000.000</td>
+        </tr>
+        <tr>
+            <td class="cont">8</td>
+            <td>Porto Alegre</td>
+            <td class="numeracao">3.000.000</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <td class="cont">4</td>
+            <th scope="row">Total de Habitantes</th>
+            <td class="numeracao"><strong>59.900.000</strong></td>
+        </tfoot>
+    </table>
+<p style="font-size: 4em;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id deleniti modi, soluta impedit tempore quas repudiandae exercitationem suscipit asperiores ex cum explicabo deserunt sit nostrum at ducimus dolore sapiente! Itaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, nemo laudantium iusto doloribus sit consequuntur beatae eum laboriosam in? Reiciendis nulla hic unde, minus ut perferendis consequuntur veniam dignissimos qui! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias pariatur aut in perferendis harum accusantium nulla reprehenderit fugit voluptatem eum sapiente dignissimos vero iusto illum ex quia cum, tempora ad.</p>
+</body>
+</html>

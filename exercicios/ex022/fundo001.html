@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Background Images-Patterns</title>
+    <link rel="shortcut icon" href="https://cdn.britannica.com/13/234213-050-45F47984/dachshund-dog.jpg" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap');
+        body{
+            background-image: url(imagens/wallpaper002.jpg);
+            font: 1.5em "Jacquarda Bastarda 9";
+            background-color: blanchedalmond;
+        }
+        .imagem{
+            width: 150px;
+            height: 150px;
+            border: 2.5px solid black ;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: center;
+            padding: 50px;
+            
+        }
+        
+        #i1{
+            background-color: aquamarine;
+        }
+        #i2{
+            background-image: linear-gradient(90deg, black, white)
+        }
+        #i3{
+            background-image: url(imagens/wallpaper002.jpg);
+        }
+    </style>    
+</head>
+<body>
+    <div class="imagem" id="i1">
+        Aquamarine
+    </div>
+
+    <div class="imagem" id="i2">
+        B&W
+    </div>
+
+    <div class="imagem" id="i3">
+        Papel de parede.
+    </div>
+</body>
+</html>

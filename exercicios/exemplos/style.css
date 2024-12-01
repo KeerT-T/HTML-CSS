@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+div{
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    color: white;
+    margin: auto;
+    font:bold 3em sans-serif;
+    text-align: center;
+    margin-top: 200px;
+    transition-duration: 0.5s;
+}
+div p{
+    padding-top: 200px;
+}
+div:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+}

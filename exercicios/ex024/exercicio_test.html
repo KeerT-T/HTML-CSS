@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Helvetica, sans-serif;
+            font-weight: bold;
+            padding: 15px;
+        }
+        table
+        {
+            border-collapse: collapse;
+        }
+
+        td,th{
+            border: 2px solid black;
+           
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <td colspan="2">a1</td>
+            <td>a2</td>
+            <td>a3</td>
+            <td>a4</td>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">b1</td>
+                <td>b2</td>
+                <td rowspan="2">b3</td>
+        </tr>
+        <tr>
+            <td rowspan="5">c1</td>
+            <td colspan="2">c2</td>
+            <td>c3</td>
+        </tr>
+        <tr>
+            <td>d1</td>
+        </tr>
+        <tr>
+            <td>e1</td>
+        </tr>
+        <tr>
+            <td>f1</td>
+        </tr>
+        <tr>
+            <td>g1</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>

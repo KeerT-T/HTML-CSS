@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iFrame</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            font-weight: 700;
+        }
+        .ytlink{
+            text-decoration: none;
+            color:  white;
+            transition-duration: 2s;
+            background-color: red;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .ytlink:hover{
+            
+            color:rgb(255, 63, 88);
+            background-color: rgb(36, 36, 36);
+            padding: 50px;
+            border-radius: 20px;
+        }
+        iframe{
+            display: block;
+            width: 800px;
+            height: 600px;
+            margin: auto;
+            
+        }
+        .bobi{
+            width: 220px;
+            height: 162px;
+        }
+        .tabela{
+            width: 150px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo a usar iFrame</h1>
+    <p>Site do <a target="_blank" href="https://cursoemvideo.com">CeV</a></p>
+
+    <iframe src="https://cobalt.tools" frameborder="0" scolling="yes"></iframe>
+
+    <br>
+    <a class="ytlink" target="_blank" href="https://youtube.com">YouTube</a>
+
+    <br>
+
+    <iframe  src="https://globo.com"  frameborder="0">
+        <a  target="_blank" href="https://globo.com"> Globo</a>
+    </iframe>
+    <br>
+    <iframe class="bobi" src="funny-spongebob.gif" frameborder="0"></iframe>
+    <iframe class="tabela" src="tabela005.html" frameborder="0"></iframe>
+</body>
+</html>

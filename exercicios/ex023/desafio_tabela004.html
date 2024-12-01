@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+            width: 400px;
+            
+        }
+        th{
+            border: 2px solid black;
+            padding: 4px;
+        }
+        td{
+            border: 2px solid black;
+            padding: 4px;
+        }
+    </style>
+</head>
+<h1 style="text-align: left;" class="destaque">Desafio 04</h1>
+<body>
+<table>
+     <thead style="background-color: rgb(109, 109, 109); color: white;">
+         <tr>
+           <th rowspan="2" scope="col">Área</th>
+           <th rowspan="2" scope="col">Disciplina</th>
+           <th colspan="2">Notas</th>
+           <th rowspan="2" scope="col">Média</th>  
+        </tr>
+        <tr>
+            <th scope="col">Nota 1</th>
+            <th scope="col">Nota 2</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th rowspan="4" scope="rowgroup">Exatas</th>
+            <td>Matemática</td>
+            <td>7.00</td>
+            <td>8.25</td>
+            <td>7.75</td>
+        </tr>
+
+        <tr>
+            <td>Física</td>
+            <td>4.25</td>
+            <td>10.00</td>
+            <td>7.00</td>
+        </tr>
+
+        <tr>
+            <td>Química</td>
+            <td>9.25</td>
+            <td>9.00</td>
+            <td>9.00</td>
+        </tr>
+
+        <tr class="destaque">
+            <td>Biologia</td>
+            <td>6.25</td>
+            <td>7.75</td>
+            <td>7.00</td>
+        </tr>
+        <tr style="background-color: rgb(109, 109, 109); color: white;">
+            <th colspan="4" style="text-align: left;" scope="row">Média de Exatas</th>
+            <td>8.00</td>
+        </tr>
+        <tr>
+            <th rowspan="2" scope="rowgroup">Humanas</th>
+            <td>História</td>
+            <td>8.00</td>
+            <td>8.00</td>
+            <td>8.00</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td>7.00</td>
+            <td>6.00</td>
+            <td>6.5</td>
+        </tr>
+        <tr style="background-color: rgb(109, 109, 109); color: white;">
+            <th colspan="4" style="text-align: left;" scope="row">Média de Humanas</th>
+            <td>7.25</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

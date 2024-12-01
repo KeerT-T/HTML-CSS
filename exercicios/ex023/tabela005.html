@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            border: 2px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+        th{
+            border: 2px solid black;
+            padding: 5px;
+        }
+        .coluna1, .coluna4{
+            background-color: bisque;
+        }
+        .coluna2{
+            background: url(gato.gif) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        tbody>tr:nth-child(odd){
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Atividade muito legal</h1>
+    <table>
+        <colgroup>
+            <col class="coluna1">
+            <col class="coluna2" span="2">
+            <col class="coluna4">
+        </colgroup>
+        
+        <thead>
+            <th scope="col">Nome do Paciente</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Altura</th>
+            <th scope="col">Gênero</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Marcia</td>
+                <td>52</td>
+                <td>1,58m</td>
+                <td>Feminino</td>
+            </tr>
+            <tr>
+                <td>Marnoeal</td>
+                <td>56</td>
+                <td>1,76m</td>
+                <td>Masculino</td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>17</td>
+                <td>1,78m</td>
+                <td>Masculino</td>
+            </tr>
+            <tr>
+                <td>Tulio</td>
+                <td>45</td>
+                <td>1,75m</td>
+                <td>Masculino</td>
+            </tr>
+            <tr>
+                <td>pinto</td>
+                <td>12</td>
+                <td>5m</td>
+                <td>Neutre</td>
+            </tr>
+        
+            <tr>
+                <td colspan="4">dasdasads</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>
