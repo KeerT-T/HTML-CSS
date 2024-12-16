@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="formulario.php" method="get" autocomplete="on">
+       <P>
+        <label for="user1">Usuário:</label>
+        <input type="text" id="user1" size="14">
+       </P>
+
+       <P>
+        <label for="pass1">Senha:</label>
+        <input type="password" id="pass1" size="15" autocomplete="new-password">
+       </P>
+       
+       <p>
+        <input type="submit">
+       </p>
+    </form>
+    <div style="height: 100px; width: 250px; background-color: red; text-align: center; color: white;";>texto legal</div>
+</body>
+    <form action="formulario.php" method="post" autocomplete="on">
+       <P>
+        <label for="user2">Usuário:</label>
+        <input type="text" id="user2" size="14">
+       </P>
+
+       <P>
+        <label for="pass2">Senha:</label>
+        <input type="password" id="pass2" size="15" autocomplete="current-password">
+       </P>
+       
+       <p>
+        <input type="submit">
+       </p>
+    </form>
+    <form action="formulario.php" method="get">
+        <p>
+            <input type="number" required min="2" max="6" step="2">
+        </p>
+        <p>
+            <input type="submit">
+            <input type="reset">
+        </p>
+        <p>
+            <label for="mes_ano">Mês e Ano</label>
+            <input type="month" id="mes_ano" value="2005-05">
+            <br> <br>
+            <label for="ano_legal">Ano, Mês e Dia</label>
+            <input type="date" id="ano_legal" value="2010-12-25">
+            <br><br>
+            <label for="hora_maneira">Hora do oléo de macaco</label>
+            <input type="time" id="hora_maneira">
+        </p>
+    </form>
+</html>
