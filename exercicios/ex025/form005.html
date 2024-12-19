@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: comic sans ms;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ex Form</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+    <fieldset>
+        <legend>Sexo</legend>
+        <label for="sex_mas">Masculino</label>
+        <input type="radio" name="sexo" id="sex_mas" value="M">
+<br>
+        <label for="sex_fem">Feminino</label>
+        <input type="radio" name="sexo" id="sex_fem" value="F">
+<br>
+        <label for="non_bin">Não binário</label>
+        <input type="radio" name="sexo" id="non_bin" checked value="NB">
+
+    </fieldset>
+   
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <label style="user-select: none;" for="ifut">Futebol</label>
+            <input type="checkbox" name="esporte_fut" id="ifut" checked>
+            
+            <br>
+
+            <label style="user-select: none;" for="ibask">Basquete</label>
+            <input type="checkbox" name="esporte_bask" id="ibask">
+
+            <br>
+
+            <label style="user-select: none;" for="ibasebol">Basebol</label>
+            <input type="checkbox" name="esporte_basebol" id="ibasebol">
+
+            <br>
+
+            <label style="user-select: none;" for="ivolei">Vôlei</label>
+            <input type="checkbox" name="esporte_volei" id="ivolei" checked>
+        </fieldset>
+        <p>
+            <input type="submit">
+        </p>
+
+
+    </form>
+</body>
+</html>
