@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .span_legal{
+            background-color: aqua;
+            padding: 40px;
+            font-family: comic sans ms;
+            font-weight: 900;
+            font-size: 3em;
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Form</h1>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label style="user-select: none;" for="icor">Cor: </label>
+                <input type="color" name="corf" id="icor" value="#0000ff">
+            </p>
+
+            <p>
+                <label for="inivel">Nível:</label>
+                <input type="range" name="nivel" id="inivel" value="0"
+                min="1" max="5">
+            </p>
+
+            <p>
+                <input type="submit" value="Mandar">
+                <input type="reset" value="Resetar">
+            </p>
+
+        </form>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nobis delectus ea odit quae adipisci exercitationem quibusdam dolorem dolorum, nisi laborum vel odio quod cumque aspernatur illo deleniti excepturi esse.<span class="span_legal">legal</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum cupiditate aut nisi magni similique ratione facere suscipit dolor dolorum maxime minus, animi eaque ex iure officiis ducimus deleniti. Quo, est?</p>
+
+        <fieldset style="display: inline; border-radius: 15px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.336);">
+            <label for="ifoto">Escolha sua foto de perfil</label>
+            <br>
+            <input style="margin-top: 5px;" type="file" name="foto" id="ifoto">
+        </fieldset>
+        </body>
+</html>
