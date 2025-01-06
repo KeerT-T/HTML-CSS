@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'IBM Plex Mono';
+            font-weight: 600;
+        }
+        optgroup{
+            font-family: comic sans ms;
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+        option{
+            font-weight: 900;
+            background-color: white;
+            color: black;
+        }
+        ::placeholder{
+            font-family: impact;
+            font-weight: 200;
+        }
+    </style>
+</head>
+<body>
+    <form action="submit.php">
+    <p>
+        <label for="iest">Estado</label>
+        <select name="est" id="iest">
+            <optgroup label="Brasil">
+                <option value="SP">São Paulo</option>
+                <option value="MA">Maranhão</option>
+                <option value="AC">Acre</option>
+            </optgroup>
+
+            <optgroup label="Estados Unidos">
+                <option value="CA">Califórnia</option>
+                <option value="TX" selected>Texas</option>
+                <option value="NYC">Nova York</option>
+            </optgroup>
+        </select>
+    
+        <p>
+            <label for="iprofiss">Profissão:</label>
+        <input type="text" id="iprofiss" name="profiss" list="lista_profiss">
+        <datalist id="lista_profiss">
+            <option>Editor de Vídeo</option>
+            <option>Designer Gráfico</option>
+            <option>Game Developer</option>
+            <option>Vagabundo</option>
+        </datalist>
+        </p>
+
+        <label for="i_text">Faça a sua resenha:</label><br>
+        <textarea name="text" id="i_text" cols="40" rows="5" placeholder="Coloque sua RESENHA aqui"></textarea>
+
+
+
+    </p>
+        <p>
+        <input type="submit">
+        <input type="reset">
+    </p>
+
+    </form>
+</body>
+</html>
