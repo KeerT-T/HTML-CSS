@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: comic sans ms;
+        }
+    </style>
+</head>
+<body>
+    <form action="enviar.php">
+        <p>
+            <input type="range" id="range_number" min="1" max="3" value="1" oninput="inumero.innerHTML = Number (range_number.value)">
+            <label for="inumero">Valor:</label>
+            <output id="inumero">1</output>
+        </p>
+        
+        <p>
+            <input type="submit">
+            <input type="reset">
+        </p>
+    </form>
+</body>
+</html>

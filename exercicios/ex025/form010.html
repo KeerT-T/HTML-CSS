@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: comic sans ms;
+        }
+    </style>
+</head>
+<body>
+    <form action="enviar.php">
+        
+        <p>
+            <label for="iano">Que ano você nasceu?</label>
+            <input type="number" id="iano" min="1800" max="2025" value="2000" oninput="i_birth.innerHTML = Number (2025) - Number (iano.value)">
+        </p>
+        
+        <p>
+            <label for="i_birth">Você tem:</label>
+            <output id="i_birth">25</output>
+            anos
+        </p>
+
+        <p>Este metodo não é recomendado, já que, o calculo do ano *base* foi colocado manualmente, o metodo certo para fazer este comendo é assim:</p>
+
+        
+
+            <p>
+                <label for="iano_v2">Que ano você nasceu?</label>
+                <input type="number" id="iano_v2" min="1900" max="2025" value="2000" oninput="calcAge()">
+            </p>
+
+            <p>
+                <label for="ano_birth_2">Você fará:</label>
+                <output id="ano_birth_2">25</output> anos
+            </p>
+
+            <script>
+                function calcAge() {
+                    let ano = new Date().getFullYear()
+                    ano_birth_2.innerHTML = Number (ano) - Number (iano_v2.value) 
+                }
+            </script>
+        
+        <p>
+            <input type="submit">
+            <input type="reset">
+        </p>
+
+    </form>
+</body>
+</html>
