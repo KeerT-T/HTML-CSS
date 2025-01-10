@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+main{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+ul{
+    list-style: upper-roman;
+}
+menu > h1{
+    text-align: center;
+}
+menu ul{
+   background-color: black;
+   color: white;
+   padding: 30px;
+}
+menu li{
+    display: inline-block;
+}
+p{
+    width: 300px;
+}

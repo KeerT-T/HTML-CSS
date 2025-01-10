@@ -1,0 +1,13 @@
+@charset "UTF-8";
+body{
+   font-family: comic sans ms;
+}
+menu{
+    display: none;
+}
+article{
+    line-height: 100px;
+}
+article::after{
+    content: 'Vai pro youtube.com/keert';
+}
