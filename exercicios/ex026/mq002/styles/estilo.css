@@ -1,0 +1,12 @@
+@charset "UTF-8";
+*{
+    font-family: comic sans ms;
+}
+.o{
+    color: blue;
+}
+.bg{
+    background: url(../imagens/cev-landscape.jpg) no-repeat top center; 
+    background-size: cover;
+    background-attachment: fixed;
+    }

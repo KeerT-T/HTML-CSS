@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+
+.o{
+    color: yellow;
+}
+.bg{
+    background: url(../imagens/cev-landscape.jpg) no-repeat top center; 
+    background-size: cover;
+    background-attachment: fixed;
+    }
