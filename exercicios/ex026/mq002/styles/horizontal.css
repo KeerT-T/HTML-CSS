@@ -1,10 +1,9 @@
 @charset "UTF-8";
 
-.o{
-    color: red;
+/* CSS HORIZONTAL */
+h1{
+    color: whitesmoke;
 }
-.bg{
-    background: url(../imagens/cev-landscape.jpg) no-repeat top center; 
-    background-size: cover;
-    background-attachment: fixed;
-    }
+body{
+    background-image: url(../imagens/cev-landscape.jpg);
+}

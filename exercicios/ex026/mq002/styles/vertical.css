@@ -1,11 +1,10 @@
 @charset "UTF-8";
 
-
-.o{
-    color: yellow;
+/* CSS VERICAL */
+h1{
+    color: rgb(255, 255, 143);
 }
-.bg{
-    background: url(../imagens/cev-landscape.jpg) no-repeat top center; 
-    background-size: cover;
-    background-attachment: fixed;
-    }
+body{
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
+}
