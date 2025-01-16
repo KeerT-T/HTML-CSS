@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQ</title>
+    <style>
+    /* Style Geral */
+    *{
+    font-family: comic sans ms;
+    color: whitesmoke;
+    margin: 0px;
+    padding: 0px;
+    }
+    html, body{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(35, 62, 255);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+    }
+    h1{
+        padding: 5px;
+    }
+
+    /* Style Landscape */
+
+    @media screen and (orientation: landscape) {
+        h1{
+    color: whitesmoke;
+    }
+    body{
+        background-image: url(../imagens/cev-landscape.jpg);
+    }
+    }
+
+    /* Style Portrait */
+
+    @media screen and (orientation: portrait) {
+        h1{
+    color: rgb(255, 255, 143);
+    }
+    body{
+        background-image: url(../imagens/cev-portrait.jpg);
+        background-position: center bottom;
+    }
+    }
+    </style>
+
+</head>
+<body>
+    <h1>Mude a orientação do seu dispositivo</h1>
+</body>
+</html>

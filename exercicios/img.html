@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body,html{
+            height: 100vh;
+            width: 100vw;
+            background: url(lebron-james-nba.gif) black no-repeat center;
+            background-size: cover;
+        }
+        
+    </style>
+</head>
+<body>
+    <audio src="All Of The Lights - Kanye West.mp3" autoplay></audio>
+
+    <script>
+        // Aguarde o carregamento do DOM e ajuste o volume
+        document.addEventListener('DOMContentLoaded', function () {
+            const audioElement = document.getElementById('all_of_the_lights');
+            // Define o volume desejado (por exemplo, 50% do volume máximo)
+            audioElement.volume = 0.1; // Ajuste para o volume desejado (0.0 a 1.0)
+        });
+    </script>
+</body>
+</html>
