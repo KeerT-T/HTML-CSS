@@ -1,6 +1,38 @@
 @charset "UTF-8";
+/* Demais midias: print, phone, desktop, etc */
 
-@media screen and (orientation: portrait) {
+
+/* 2024 Breakpoints Values:
+    XS Extra Small - Até 480px
+    S Small (Phones) - 481px Até 768px
+    M Medium (Tablets) - 769px Até 1024px
+    L Large (Desktop/Laptops) - 1025px Até 1440px
+    XL Extra Large (Desktops) - 1441px Até 1920px
+    XXL Ultra-Wide - 1921px Pra cima
+
+    Lembrnado que todos os valores são em WIDTH
+
+*/
+
+
+@media screen and (min-width:769px) and (max-width:1024px) { /* TABLET */
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
     
-  
+}
+
+
+@media screen and (min-width:1024px) and (max-width:1920px) { /* Laptops/Desktops */
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    
+}
+}
+
+
+@media screen and (min-width:1921px) { /* Telas grandes */
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+}
 }
