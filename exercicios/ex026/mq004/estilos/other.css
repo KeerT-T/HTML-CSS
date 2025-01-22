@@ -14,19 +14,31 @@
 
 */
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 
 @media screen and (min-width:769px) and (max-width:1024px) { /* TABLET */
     body{
         background-image: url(../imagens/back-tablet.jpg);
     }
-    
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: block;
+    }
 }
 
 
 @media screen and (min-width:1024px) and (max-width:1920px) { /* Laptops/Desktops */
     body{
         background-image: url(../imagens/back-pc.jpg);
-    
+}
+img#phone{
+    display: none;
+}
+img#pc{
+    display: block;
 }
 }
 
@@ -35,4 +47,29 @@
     body{
         background-image: url(../imagens/back-tv.jpg);
 }
+img#phone{
+    display: none;
+}
+img#tv{
+    display: block;
+}
+}
+
+@media print {
+    main{
+        border: 5px solid black;
+        text-align: center;
+    }
+    h1{
+        font-family: 'IBM Plex Mono';
+        color: rgb(255, 255, 255);
+        text-shadow: 4px 0px 0px black;
+        
+    }
+    main::after{
+        
+        content: 'github.com/keert-t';
+        text-decoration: underline;
+        
+    }
 }
