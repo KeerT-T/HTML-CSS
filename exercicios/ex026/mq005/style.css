@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+h1{
+    font-size: 3em;
+}
+html, body{
+    height: 100vh;
+}
+header{
+    text-align: center;
+    background-color: grey;
+    padding: 5px;
+}
+li > a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition-duration: 500ms;
+}
+li>a:hover{
+    color: black;
+}
+article{
+    width: 840px;
+    text-align: center;
+    margin: auto;
+    font-size: 1.4em;
+}
