@@ -6,6 +6,7 @@
     }
     #main_menu{
         display: block !important;
+        
     }
     #main_menu > ul > li{
         display: inline-block;
